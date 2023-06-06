@@ -1,0 +1,38 @@
+<p>
+  <strong>Identification:</strong>
+  <%= @person.identification %>
+</p>
+
+<p>
+  <strong>First Name:</strong>
+  <%= @person.first_name %>
+</p>
+
+<p>
+  <strong>Second Name:</strong>
+  <%= @person.second_name %>
+</p>
+
+<p>
+  <strong>First Last Name:</strong>
+  <%= @person.first_last_name %>
+</p>
+
+<p>
+  <strong>Second Last Name:</strong>
+  <%= @person.second_last_name %>
+</p>
+
+<p>
+  <strong>Role:</strong>
+  <%= @person.role.role_name %>
+</p>
+
+<p>
+  <strong>Document:</strong>
+  <%= @person.document.document_type %>
+</p>
+
+<%= link_to 'Edit', edit_person_path(@person) %> |
+<%= link_to 'Volver', people_path %>
+

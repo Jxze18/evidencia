@@ -1,0 +1,28 @@
+<center><h1> Formulario De Personas </h1>
+<table class="table table-hover">
+  <thead>
+    <tr>
+    <th scope="col">Identification</th>
+    <th scope="col">First Name</th>
+    <th scope="col">Second Name</th>
+    <th scope="col">First Last Name</th>
+    <th scope="col">Second Last Name</th>
+    <th>Role</th>
+    <th>Document</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+    <% @people.each do |person| %>
+        <td><%= person.identification %></td>
+          <td><%= person.first_name %></td>
+           <td><%= person.second_name %></td>
+           <td><%= person.first_last_name %></td>
+          <td><%= person.second_last_name %></td>
+        <td><%= person.role.role_name %></td>
+      <td><%= person.document.document_type %></td>
+        
+    </tr>
+    <% end %>
+  </tbody>
+</table>
